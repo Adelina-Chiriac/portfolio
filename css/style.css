@@ -58,6 +58,31 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 /* Typography */
 
 h1,
@@ -174,6 +199,10 @@ h3 {
   opacity: 0.25;
 }
 
+.services {
+  margin-bottom: 4em;
+}
+
 .service {
   max-width: 500px;
   margin: 0 auto;
@@ -184,7 +213,8 @@ h3 {
     display: flex;
     /* edit this if more space needed for columns */
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .service + .service {
